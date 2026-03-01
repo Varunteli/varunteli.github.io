@@ -5,23 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Varun Teli | Mechanical Design Engineer</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 html { scroll-behavior: smooth; }
 
 body {
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    background: #0f172a;
-    color: #e2e8f0;
+    font-family: 'Poppins', sans-serif;
+    background: #f8fafc;
+    color: #1e293b;
 }
 
 nav {
-    background: #020617;
-    padding: 15px 0;
+    background: white;
+    padding: 18px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .nav-container {
@@ -34,41 +36,41 @@ nav {
 }
 
 nav a {
-    color: #94a3b8;
-    margin-left: 20px;
+    color: #334155;
+    margin-left: 25px;
     text-decoration: none;
+    font-weight: 500;
 }
 
 nav a:hover {
-    color: #38bdf8;
+    color: #2563eb;
 }
 
 header {
     text-align: center;
-    padding: 120px 20px;
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #2563eb, #1e3a8a);
+    color: white;
 }
 
 header h1 {
-    font-size: 42px;
+    font-size: 44px;
+    margin-bottom: 10px;
 }
 
 header p {
     font-size: 18px;
-    color: #94a3b8;
     max-width: 700px;
     margin: auto;
-}
-
-.hero-buttons {
-    margin-top: 30px;
+    opacity: 0.9;
 }
 
 .btn {
     display: inline-block;
-    padding: 12px 28px;
-    margin: 5px;
-    background: #38bdf8;
-    color: #0f172a;
+    padding: 10px 24px;
+    margin: 8px;
+    background: #2563eb;
+    color: white;
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
@@ -76,57 +78,70 @@ header p {
 
 .btn.secondary {
     background: transparent;
-    border: 2px solid #38bdf8;
-    color: #38bdf8;
+    border: 2px solid #2563eb;
+    color: #2563eb;
 }
 
 section {
     padding: 80px 20px;
-    max-width: 1200px;
+    max-width: 1100px;
     margin: auto;
 }
 
 h2 {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    font-size: 32px;
+    color: #1e293b;
 }
 
 .project {
-    background: #1e293b;
-    padding: 25px;
+    background: white;
+    padding: 30px;
     border-radius: 12px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.project h3 {
+    color: #2563eb;
 }
 
 .project img {
     width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 20px auto;
     border-radius: 10px;
-    margin-top: 15px;
 }
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
 }
 
 .skill-card {
-    background: #1e293b;
-    padding: 15px;
-    border-radius: 8px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
     text-align: center;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
 }
 
-.contact-box {
-    text-align: center;
-    line-height: 2;
+.skill-card:hover {
+    background: #2563eb;
+    color: white;
+    transform: translateY(-5px);
 }
 
 footer {
     text-align: center;
     padding: 30px;
-    background: #020617;
-    color: #94a3b8;
+    background: #1e293b;
+    color: white;
 }
 </style>
 </head>
@@ -134,107 +149,100 @@ footer {
 <body>
 
 <nav>
-    <div class="nav-container">
-        <h3>Varun Teli</h3>
-        <div>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#internship">Internship</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </div>
+<div class="nav-container">
+<h3>Varun Teli</h3>
+<div>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#internship">Internship</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
 </nav>
 
 <header>
-    <h1>Mechanical Design & CAE Engineer</h1>
-    <p>
-        Mechanical Engineering student specializing in CAD design, structural analysis,
-        automation systems, reverse engineering, and manufacturing exposure.
-    </p>
-    <div class="hero-buttons">
-        <a href="#projects" class="btn">View Projects</a>
-        <a href="resume.pdf" class="btn secondary">Download Resume</a>
-    </div>
+<h1>Mechanical Design & CAE Engineer</h1>
+<p>Specializing in CAD Modeling, Structural Analysis, Optimization & Industrial Engineering Solutions.</p>
+<a href="#projects" class="btn">Explore My Work</a>
 </header>
 
-<section id="about">
-    <h2>About Me</h2>
-    <p style="text-align:center; max-width:800px; margin:auto;">
-        Currently working as an intern at Tata Motors (CPI Department),
-        involved in product inspection, quality evaluation, defect analysis,
-        and continuous improvement initiatives in commercial vehicle production.
-    </p>
-</section>
-
 <section id="projects">
-    <h2>Projects</h2>
+<h2>Projects</h2>
 
-    <div class="project">
-        <h3>Vegetable Carrier Structural Optimization</h3>
-        <p>Performed static and modal analysis in ANSYS. Achieved 17% weight reduction through topology optimization.</p>
-        <a href="paper.pdf" class="btn secondary">View Conference Paper</a>
-        <a href="Vegetable cart conference certificate .pdf" class="btn secondary">View Certificate</a>
-    </div>
+<!-- 1 Vegetable Cart -->
+<div class="project">
+<h3>1. Vegetable Cart Structural Optimization</h3>
+<p>Performed static & modal analysis in ANSYS. Achieved 17% weight reduction using topology optimization for structural efficiency improvement.</p>
+<a href="vegetable-cart-paper.pdf" class="btn secondary">View Conference Paper</a>
+<img src="carrier1.jpg">
+<img src="carrier2.jpg">
+</div>
 
-    <div class="project">
-        <h3>RFID-Based Sorting Automation</h3>
-        <p>Designed mechanical sorting system for automated logistics. Presented at RAMM Conference.</p>
-        <a href="ramm-paper.pdf" class="btn secondary">View Research Paper</a>
-    </div>
+<!-- 2 Onion Detopper -->
+<div class="project">
+<h3>2. Onion Detopper Machine</h3>
+<p>Designed a semi-automatic agricultural machine to enhance post-harvest efficiency and labor safety. Integrated rotary cutting mechanism, structural frame, and safety guard system.</p>
+<a href="onion-report.pdf" class="btn secondary">View Report</a>
+<img src="onion1.jpeg">
+<img src="onion2.jpg">
+</div>
 
-    <div class="project">
-        <h3>Arduino Cyclone Accelade Project</h3>
-        <p>Developed Arduino-based embedded control system integrating sensors and automation logic.</p>
-        <img src="auirdino.jpg">
-    </div>
+<!-- 3 Tricycle -->
+<div class="project">
+<h3>3. Tricycle Reverse Engineering</h3>
+<p>Conducted dimensional study, CAD reconstruction in CATIA, and structural evaluation for design validation.</p>
+<img src="tricycle.png">
+</div>
 
-    <div class="project">
-        <h3>Tricycle Reverse Engineering Project</h3>
-        <p>Performed dimensional study, CAD reconstruction, and structural evaluation of commercial tricycle.</p>
-        <img src="tricycle.png">
-    </div>
+<!-- 4 Arduino -->
+<div class="project">
+<h3>4. Arduino Cyclone Accelade</h3>
+<p>Developed embedded automation system integrating sensors, microcontroller logic, and mechanical actuation.</p>
+<img src="auirdino.jpg">
+</div>
+
+<!-- 5 RFID -->
+<div class="project">
+<h3>5. RFID-Based Sorting Automation</h3>
+<p>Designed automated mechanical sorting system for logistics applications. Presented research at RAMM Conference.</p>
+<a href="ramm-paper.pdf" class="btn secondary">View Research Paper</a>
+<img src="RFID.jpg">
+</div>
 
 </section>
 
 <section id="skills">
-    <h2>Technical Skills</h2>
-    <div class="skills-grid">
-        <div class="skill-card">CATIA V5</div>
-        <div class="skill-card">SolidWorks</div>
-        <div class="skill-card">ANSYS</div>
-        <div class="skill-card">Supply Chain</div>
-        <div class="skill-card">Quality Inspection</div>
-        <div class="skill-card">GD&T</div>
-        <div class="skill-card">PLC Automation</div>
-        <div class="skill-card">MATLAB / Simulink</div>
-    </div>
+<h2>Technical Skills</h2>
+<div class="skills-grid">
+<div class="skill-card">CATIA V5</div>
+<div class="skill-card">SolidWorks</div>
+<div class="skill-card">ANSYS</div>
+<div class="skill-card">GD&T</div>
+<div class="skill-card">Supply Chain</div>
+<div class="skill-card">Quality Inspection</div>
+<div class="skill-card">MATLAB / Simulink</div>
+<div class="skill-card">PLC Automation</div>
+</div>
 </section>
 
 <section id="internship">
-    <h2>Internship – Tata Motors</h2>
-    <div class="project">
-        <h3>Customer Product Audit (CPI Department) – Ongoing</h3>
-        <p>
-            Working at Tata Motors, Dharwad Plant.
-            Responsible for product quality inspection,
-            audit validation, defect analysis, production line monitoring,
-            and supporting continuous improvement initiatives.
-        </p>
-    </div>
+<h2>Internship – Tata Motors (CPI Department)</h2>
+<div class="project">
+<p>Involved in product inspection, audit validation, defect analysis, production line quality monitoring, and continuous improvement initiatives in commercial vehicle manufacturing.</p>
+</div>
 </section>
 
 <section id="contact">
-    <h2>Contact</h2>
-    <div class="contact-box">
-        <p>Email: varunteli121@email.com</p>
-        <p>LinkedIn: linkedin.com/in/varun-teli-971a2a275</p>
-        <p>GitHub: github.com/varunteli</p>
-    </div>
+<h2>Contact</h2>
+<p style="text-align:center;">
+Email: yourmail@email.com <br>
+LinkedIn: linkedin.com/in/yourprofile <br>
+GitHub: github.com/varunteli
+</p>
 </section>
 
 <footer>
-    © 2025 Varun Teli | Mechanical Design Portfolio
+© 2025 Varun Teli | Mechanical Engineering Portfolio
 </footer>
 
 </body>
