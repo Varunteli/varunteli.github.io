@@ -27,7 +27,7 @@ nav {
 
 .nav-container {
     width: 90%;
-    max-width: 1100px;
+    max-width: 1200px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -38,7 +38,6 @@ nav a {
     color: #94a3b8;
     margin-left: 20px;
     text-decoration: none;
-    font-weight: 500;
 }
 
 nav a:hover {
@@ -58,7 +57,7 @@ header h1 {
 header p {
     font-size: 18px;
     color: #94a3b8;
-    max-width: 600px;
+    max-width: 700px;
     margin: auto;
 }
 
@@ -75,11 +74,6 @@ header p {
     text-decoration: none;
     border-radius: 6px;
     font-weight: 600;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #0ea5e9;
 }
 
 .btn.secondary {
@@ -89,35 +83,27 @@ header p {
 }
 
 section {
-    padding: 90px 20px;
-    max-width: 1100px;
+    padding: 80px 20px;
+    max-width: 1200px;
     margin: auto;
 }
 
 h2 {
-    margin-bottom: 40px;
     text-align: center;
+    margin-bottom: 40px;
 }
 
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-}
-
-.card {
+.project {
     background: #1e293b;
     padding: 25px;
     border-radius: 12px;
-    transition: 0.3s;
+    margin-bottom: 40px;
 }
 
-.card:hover {
-    transform: translateY(-6px);
-}
-
-.card h3 {
-    margin-top: 0;
+.project img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 15px;
 }
 
 .skills-grid {
@@ -131,7 +117,6 @@ h2 {
     padding: 15px;
     border-radius: 8px;
     text-align: center;
-    font-weight: 500;
 }
 
 .contact-box {
@@ -144,7 +129,6 @@ footer {
     padding: 30px;
     background: #020617;
     color: #94a3b8;
-    margin-top: 40px;
 }
 </style>
 </head>
@@ -158,6 +142,7 @@ footer {
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
+            <a href="#internship">Internship</a>
             <a href="#contact">Contact</a>
         </div>
     </div>
@@ -165,7 +150,10 @@ footer {
 
 <header>
     <h1>Mechanical Design & CAE Engineer</h1>
-    <p>Designing optimized, analysis-driven mechanical systems aligned with real-world industry standards.</p>
+    <p>
+        Mechanical Engineering student specializing in CAD design, structural analysis,
+        automation systems, reverse engineering, and manufacturing exposure.
+    </p>
     <div class="hero-buttons">
         <a href="#projects" class="btn">View Projects</a>
         <a href="resume.pdf" class="btn secondary">Download Resume</a>
@@ -175,37 +163,49 @@ footer {
 <section id="about">
     <h2>About Me</h2>
     <p style="text-align:center; max-width:800px; margin:auto;">
-        Mechanical Engineering student specializing in CAD design, structural analysis, and product optimization.
-        Experienced in CATIA V5, SolidWorks, ANSYS, and HyperMesh.
-        Focused on engineering solutions that balance performance, manufacturability, and efficiency.
+        Currently working as an intern at Tata Motors (CPI Department),
+        involved in product inspection, quality evaluation, defect analysis,
+        and continuous improvement initiatives in commercial vehicle production.
     </p>
 </section>
 
 <section id="projects">
     <h2>Projects</h2>
-    <div class="project-grid">
 
-        <div class="card">
-            <h3>Vegetable Carrier Optimization</h3>
-            <p>Performed static and modal analysis in ANSYS. Achieved 17% weight reduction through topology optimization while maintaining structural integrity.</p>
-        </div>
-
-        <div class="card">
-            <h3>RFID-Based Sorting System</h3>
-            <p>Designed mechanical sorting architecture for automated logistics system. Research presented at ICRAMM 2025.</p>
-        </div>
-
-        <div class="card">
-            <h3>PLC-Based Automation System</h3>
-            <p>Developed conveyor-based object sorting system using PLC ladder logic and sensor integration for industrial automation.</p>
-        </div>
-
-        <div class="card">
-            <h3>Onion Detopper Machine</h3>
-            <p>Designed semi-automatic agricultural processing machine focused on safety, durability, and operational efficiency.</p>
-        </div>
-
+    <div class="project">
+        <h3>Vegetable Carrier Structural Optimization</h3>
+        <p>Performed static and modal analysis in ANSYS. Achieved 17% weight reduction through topology optimization.</p>
+        <a href="M24 paper.pdf" class="btn secondary">View Research Paper</a>
+        <img src="carrier1.jpg">
+        <img src="carrier2.jpg">
     </div>
+
+    <div class="project">
+        <h3>RFID-Based Sorting Automation</h3>
+        <p>Designed mechanical sorting system for automated logistics. Presented at ICRAMM conference.</p>
+        <a href="Automated label sorting.pdf" class="btn secondary">View Report</a>
+        <img src="RFID.jpg">
+    </div>
+
+    <div class="project">
+        <h3>Onion Detopper Machine</h3>
+        <p>Designed semi-automatic agricultural machine focused on efficiency and operator safety.</p>
+        <a href="Onion Dettoping.docx" class="btn secondary">View Report</a>
+    </div>
+
+    <div class="project">
+        <h3>Arduino Cyclone Accelade Project</h3>
+        <p>Developed Arduino-based embedded control system integrating sensors and automation logic.</p>
+        <a href="MECHATRONICS_REPORT_(TEAM-A16) FINAL.pdf" class="btn secondary">View Report</a>
+        <img src="auridino.jpg">
+    </div>
+
+    <div class="project">
+        <h3>Tricycle Reverse Engineering Project</h3>
+        <p>Performed dimensional study, CAD reconstruction, and structural analysis of a commercial tricycle.</p>
+        <a href="CAD MODEL OF TRICYCLE.pdf" class="btn secondary">View CAD Report</a>
+    </div>
+
 </section>
 
 <section id="skills">
@@ -213,12 +213,25 @@ footer {
     <div class="skills-grid">
         <div class="skill-card">CATIA V5</div>
         <div class="skill-card">SolidWorks</div>
-        <div class="skill-card">ANSYS (Static & Modal)</div>
-        <div class="skill-card">HyperMesh</div>
+        <div class="skill-card">ANSYS</div>
+        <div class="skill-card">Supply Chain</div>
+        <div class="skill-card">Quality Inspection</div>
         <div class="skill-card">GD&T</div>
-        <div class="skill-card">Design Optimization</div>
         <div class="skill-card">PLC Automation</div>
         <div class="skill-card">MATLAB / Simulink</div>
+    </div>
+</section>
+
+<section id="internship">
+    <h2>Internship – Tata Motors</h2>
+    <div class="project">
+        <h3>Customer Product Audit (CPI Department) – Ongoing</h3>
+        <p>
+            Working at Tata Motors, Dharwad Plant.
+            Responsible for product quality inspection,
+            audit validation, defect analysis, production line monitoring,
+            and supporting continuous improvement initiatives.
+        </p>
     </div>
 </section>
 
